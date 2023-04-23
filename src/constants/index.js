@@ -1,26 +1,28 @@
 import {
     backend,
-    carrent,
+    chessEngineDemo,
     creator,
     css,
     docker,
-    figma,
+    firebase,
     git,
     html,
+    java,
     javascript,
-    jobit,
+    jira,
+    linux,
     mobile,
-    mongodb,
+    monitoringSystem,
     nodejs,
+    python,
     reactjs,
-    redux,
+    sql,
     tailwind,
+    tauri,
     tbz,
-    threejs,
-    tripguide,
     typescript,
     web,
-    webmen,
+    webmen
 } from "../assets";
 
 export const navLinks = [
@@ -38,6 +40,17 @@ export const navLinks = [
     },
 ];
 
+export const externalLinks = [
+    {
+        name: "Github",
+        to: "https://github.com/Tanzkalmar35"
+    },
+    {
+        name: "Upwork",
+        to: "https://upwork.com/"
+    },
+];
+
 const services = [
     {
         title: "Web Developer",
@@ -48,7 +61,7 @@ const services = [
         icon: mobile,
     },
     {
-        title: "Mobile app developer",
+        title: "Desktop app developer",
         icon: creator,
     },
     {
@@ -79,10 +92,6 @@ const technologies = [
         icon: reactjs,
     },
     {
-        name: "Redux Toolkit",
-        icon: redux,
-    },
-    {
         name: "Tailwind CSS",
         icon: tailwind,
     },
@@ -91,24 +100,40 @@ const technologies = [
         icon: nodejs,
     },
     {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
         name: "git",
         icon: git,
     },
     {
-        name: "figma",
-        icon: figma,
-    },
-    {
         name: "docker",
         icon: docker,
+    },
+    {
+        name: "Java",
+        icon: java,
+    },
+    {
+        name: "Python",
+        icon: python,
+    },
+    {
+        name: "Firebase",
+        icon: firebase,
+    },
+    {
+        name: "Sql",
+        icon: sql,
+    },
+    {
+        name: "Tauri",
+        icon: tauri,
+    },
+    {
+        name: "Linux",
+        icon: linux,
+    },
+    {
+        name: "Jira",
+        icon: jira,
     },
 ];
 
@@ -138,77 +163,53 @@ const experiences = [
     },
 ];
 
-const testimonials = [
-    {
-        testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-        testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-];
-
 const projects = [
     {
-        name: "Car Rent",
+        name: "Chess Engine",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "A Chess engine made in JavaScript that is able to play pretty good chess. In this application you play" +
+            " vs the chess engine and I personally never won against the finished version. ",
+        tags: [
+            {
+                name: "javascript",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "netlify",
+                color: "green-text-gradient",
+            },
+        ],
+        image: chessEngineDemo,
+        source_code_link: "https://github.com/Tanzkalmar35/Js-Chess-Engine",
+    },
+    {
+        name: "Air quality monitoring system",
+        description:
+            "A system that is connected to multiple sensors to display the received data in a desktop app or a" +
+            " website. The goal of this project is to help you make your environment healthier through showing for" +
+            " example when you should open the window with a future prognosis.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
-                color: "green-text-gradient",
+                name: "javascript",
+                color: "pink-text-gradient",
             },
             {
                 name: "tailwind",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: carrent,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Job IT",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-            {
-                name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "tauri",
                 color: "green-text-gradient",
             },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: monitoringSystem,
+        source_code_link: "https://github.com/Tanzkalmar35/AbiProjekt",
     },
-    {
+    /*{
         name: "Trip Guide",
         description:
             "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
@@ -228,7 +229,7 @@ const projects = [
         ],
         image: tripguide,
         source_code_link: "https://github.com/",
-    },
+    },*/
 ];
 
-export {services, technologies, experiences, testimonials, projects};
+export {services, technologies, experiences, projects};

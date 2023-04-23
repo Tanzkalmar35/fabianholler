@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 import {styles} from "../styles.js";
 import {close, logo, menu} from "../assets/index.js";
-import {navLinks} from "../constants/index.js";
+import {externalLinks, navLinks} from "../constants/index.js";
 
 const Navbar = () => {
 
@@ -24,6 +24,26 @@ const Navbar = () => {
                     <p className="text-white text-[18px] font-bold cursor-pointer flex">Fabian &nbsp;<span
                         className="sm:block hidden">Holler</span></p>
                 </Link>
+                <div>
+                    <ul className="list-none hidden sm:flex flex-row gap-10">
+                        {externalLinks.map((link) => (
+                            <li
+                                key={link.to}
+                                className={`${
+                                    active === link.title
+                                        ? "text-white"
+                                        : "text-secondary"
+                                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                                onClick={() => {
+                                    setActive(link.name)
+                                    window.open(link.to, '_blank')
+                                }}
+                            >
+                                <p>{link.name}</p>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
                 <ul className="list-none hidden sm:flex flex-row gap-10">
                     {navLinks.map((link) => (
                         <li

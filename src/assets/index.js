@@ -9,26 +9,26 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import firebase from "./tech/firebase.png";
+import jira from "./tech/jira.png";
+import linux from "./tech/linux.png";
+import python from "./tech/python.png";
+import sql from "./tech/sql.png";
+import tauri from "./tech/tauri.png";
+import java from "./tech/java.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
 import tbz from "./company/tbz.png";
 import webmen from "./company/webmen.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import monitoringSystem from "./monitoringSystem.png";
+import chessEngineDemo from "./chessEngineDemo.png";
 
 export {
     logo,
@@ -41,22 +41,22 @@ export {
     close,
     css,
     docker,
-    figma,
     git,
     html,
     javascript,
-    mongodb,
     nodejs,
     reactjs,
-    redux,
     tailwind,
     typescript,
-    threejs,
-    meta,
-    shopify,
     tbz,
     webmen,
-    carrent,
-    jobit,
-    tripguide,
+    chessEngineDemo,
+    monitoringSystem,
+    firebase,
+    jira,
+    linux,
+    python,
+    sql,
+    tauri,
+    java
 };
