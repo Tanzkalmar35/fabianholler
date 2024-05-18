@@ -23,6 +23,7 @@ import python from "./tech/python.png";
 import sql from "./tech/sql.png";
 import tauri from "./tech/tauri.png";
 import java from "./tech/java.png";
+import rust from "./tech/rust.png";
 
 import tbz from "./company/tbz.png";
 import webmen from "./company/webmen.png";
@@ -58,5 +59,6 @@ export {
     python,
     sql,
     tauri,
-    java
+    java,
+    rust
 };

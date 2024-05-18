@@ -11,9 +11,7 @@ import {
     javascript,
     jira,
     linux,
-    mobile,
     monitoringSystem,
-    nodejs,
     python,
     reactjs,
     sql,
@@ -22,7 +20,8 @@ import {
     tbz,
     typescript,
     web,
-    webmen
+    webmen,
+    rust
 } from "../assets";
 
 export const navLinks = [
@@ -44,21 +43,13 @@ export const externalLinks = [
     {
         name: "Github",
         to: "https://github.com/Tanzkalmar35"
-    },
-    {
-        name: "Upwork",
-        to: "https://upwork.com/"
-    },
+    }
 ];
 
 const services = [
     {
         title: "Web Developer",
         icon: web,
-    },
-    {
-        title: "React Native Developer",
-        icon: mobile,
     },
     {
         title: "Desktop app developer",
@@ -71,14 +62,6 @@ const services = [
 ];
 
 const technologies = [
-    {
-        name: "HTML 5",
-        icon: html,
-    },
-    {
-        name: "CSS 3",
-        icon: css,
-    },
     {
         name: "JavaScript",
         icon: javascript,
@@ -96,8 +79,8 @@ const technologies = [
         icon: tailwind,
     },
     {
-        name: "Node JS",
-        icon: nodejs,
+        name: "Rust",
+        icon: rust,
     },
     {
         name: "git",
@@ -145,8 +128,8 @@ const experiences = [
         iconBg: "#383E56",
         date: "August 2021 - Juli 2024",
         points: [
-            "I am currently in grade 12, majoring in computer science and English.",
-            "Studying in Bremen, Germany",
+            "I just finished school, majoring in computer science and English.",
+            "Going to study Software Engineering soon.",
         ],
     },
     {
@@ -209,27 +192,6 @@ const projects = [
         image: monitoringSystem,
         source_code_link: "https://github.com/Tanzkalmar35/AbiProjekt",
     },
-    /*{
-        name: "Trip Guide",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "supabase",
-                color: "green-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
-    },*/
 ];
 
 export {services, technologies, experiences, projects};

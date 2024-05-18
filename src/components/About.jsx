@@ -32,31 +32,39 @@ const ServiceCard = ({index, title, icon}) => {
 
 const About = () => {
     return (
-        <>
-            <motion.div variants={textVariant()}>
-                <p className={styles.sectionSubText}>Introduction</p>
-                <h2 className={styles.sectionHeadText}>Overview.</h2>
-            </motion.div>
-            <motion.p
-                variants={fadeIn("", "", 0.1, 1)}
-                className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-            >
-                Hi there, I'm an 18-year-old software developer with a passion
-                for creating innovative and impactful solutions. I love to build software that solves complex problems
-                and helps make people's lives easier. With a strong foundation in programming languages such as Java,
-                JavaScript and TypeScript, I am constantly expanding my skillset to stay on top of the latest trends
-                and advancements in the tech industry. When I'm not coding, you can find me exploring new technologies
-                and experimenting with new ideas. Let's work together to bring your ideas to life!
-            </motion.p>
-            <div
-                className="mt-20 flex flex-wrap gap-10"
-            >
-                {services.map((service, index) => (
-                    <ServiceCard key={service.title} index={index} {...service} />
-                ))}
-            </div>
-        </>
-    )
+      <>
+        <motion.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>Introduction</p>
+          <h2 className={styles.sectionHeadText}>Overview.</h2>
+        </motion.div>
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        >
+          Hi there, I'm an
+          <span className="font-bold italic">
+            {" "}
+            19-year-old software developer
+          </span>{" "}
+          with a passion for creating innovative and impactful solutions. I love
+          to build software that solves complex problems and helps make people's
+          lives easier. With a strong foundation in programming languages such
+          as
+          <span className="font-bold italic">
+            {" "}
+            Java, JavaScript, TypeScript and Rust
+          </span>
+          , I am constantly expanding my skillset to stay on top of the latest
+          trends and advancements in the tech industry. When I'm not coding, you
+          can find me <span className="font-bold italic">doing sports</span>!
+        </motion.p>
+        <div className="mt-20 flex flex-wrap gap-10">
+          {services.map((service, index) => (
+            <ServiceCard key={service.title} index={index} {...service} />
+          ))}
+        </div>
+      </>
+    );
 }
 
 export default SectionWrapper(About, "about")
